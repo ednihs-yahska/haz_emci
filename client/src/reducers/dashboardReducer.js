@@ -37,6 +37,18 @@ export default function dashboardReducer(state={
       count: 6,
       last_when: 300,
       priority: 5
+    },
+    {
+      id: 6,
+      count: 6,
+      last_when: 300,
+      priority: 7
+    },
+    {
+      id: 7,
+      count: 6,
+      last_when: 300,
+      priority: 8
     }
   ],
     previous_reports: []

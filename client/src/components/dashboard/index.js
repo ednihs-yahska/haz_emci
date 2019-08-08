@@ -127,11 +127,13 @@ const ReportContainer = styled.div`
   .title{
     display: flex;
     width: 100%;
-    height: 3em;
+    height: 2em;
     align-items: flex-start;
     font-family: Roboto;
     justify-content: center;
     color: ${colors.lighter_red};
+    z-index: 99;
+    background: #fff;
     font-size: 1.4em;
     font-weight: 400;
     position: absolute;
