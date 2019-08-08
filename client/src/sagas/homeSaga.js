@@ -1,11 +1,9 @@
-import { call, put, takeEvery, fork, takeLatest, all } from 'redux-saga/effects'
+import { call, put, takeEvery, takeLatest, all } from 'redux-saga/effects'
 import axios from 'axios'
 import {convertObjectToArray} from 'globals'
 
 
 const baseUrl = "http://localhost:3000/api/v1"
-
-const delay = (ms) => new Promise(res => setTimeout(res, ms))
 
 const doGetAlerts = (payload)=>axios.get(`${baseUrl}/alerts`, {params:{owner: payload.payload.owner}, withCredentials: true});
 const doGetGlobals = (payload)=>axios.get(`${baseUrl}/globals`)
