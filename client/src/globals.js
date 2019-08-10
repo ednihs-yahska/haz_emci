@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faExclamation, faUser, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-export const convertObjectToArray = (stacks) => Object.keys(stacks).filter(k=>k!="_links").map(k=>stacks[k])
+export const convertObjectToArray = (stacks) => Object.keys(stacks).filter(k=>k!=="_links").map(k=>stacks[k])
 
 export const colors = {
     left_menu_background: "#0F273E",
@@ -53,4 +53,6 @@ export function urlB64ToUint8Array(base64String) {
       outputArray[i] = rawData.charCodeAt(i);
     }
     return outputArray;
-  }
+}
+
+export const delay = (ms) => new Promise(res => setTimeout(res, ms))
