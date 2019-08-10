@@ -9,7 +9,7 @@ import { ToggleButton as Button } from "../reusables/toggleButton"
 const HAZARDS = [
 	"Fire",
 	"Crime and Violence",
-	"Evacuate",
+	"Evacuation",
 	"Terror",
 	"Weather",
 	"Biohazard",
