@@ -6,8 +6,11 @@ export class ToggleButton extends Component {
 	}
 
 	handleClick = () => {
+        const { fields, text } = this.props
         this.setState(prevState => ({ active: !prevState.active }))
-        this.props.fields.push(this.props.text)
+        if (fields) {
+            fields.push(text)
+        }
     }
 		
 	render() {

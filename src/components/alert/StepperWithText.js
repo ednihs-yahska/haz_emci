@@ -77,7 +77,6 @@ export default function HorizontalLabelPositionBelowStepper() {
 					</div>
 				) : (
 					<div>
-						{/* insert forms here */}
 						{getStepContent(activeStep)}
 						<div>
 							<Button

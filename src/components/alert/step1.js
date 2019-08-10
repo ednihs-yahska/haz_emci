@@ -12,8 +12,9 @@ const HAZARDS = [
 	"Evacuate",
 	"Terror",
 	"Weather",
-	"BioHazard",
-	"Earthquake, Landslide",
+	"Biohazard",
+	"Earthquake",
+	"Landslide",
 	"Flood",
 	"Traffic"
 ]
@@ -112,11 +113,9 @@ class Step1 extends Component {
 				className="ui center aligned basic segment"
 				style={{ marginTop: 20 }}
 			>
-				<FieldArray
-					name="hazards"
-					className="nine ui buttons"
-					component={this.renderHazards}
-				/>
+				<div className="ten ui buttons">
+					<FieldArray name="hazards" component={this.renderHazards} />
+				</div>
 				<div className="ui basic segment">
 					<div className="ui grid">
 						<div className="eight wide column" style={{ marginTop: 15 }}>
